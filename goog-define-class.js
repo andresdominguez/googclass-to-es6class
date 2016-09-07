@@ -105,8 +105,3 @@ module.exports = function(babel) {
     }
   };
 };
-
-class Foo {
-  constructor() {
-  }
-}
