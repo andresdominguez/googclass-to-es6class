@@ -1,6 +1,6 @@
 {
   "name": "goog-class-to-es6",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -12,7 +12,7 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "babel-core": "^6.14.0"
   }
 }
