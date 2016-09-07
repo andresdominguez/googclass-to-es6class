@@ -10,7 +10,7 @@ const fileName = process.argv[2];
 const src = fs.readFileSync(fileName, 'utf8');
 
 // use our plugin to transform the source
-var out = babel.transform(src, {
+const out = babel.transform(src, {
   plugins: [googDefineClass]
 });
 
