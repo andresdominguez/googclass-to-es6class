@@ -1,8 +1,11 @@
 {
-  "name": "moriscript",
+  "name": "googClassToES6",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "googClassToES6": "run.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
