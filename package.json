@@ -5,7 +5,7 @@
     "type": "git",
     "url": "https://github.com/andresdominguez/googclass-to-es6class.git"
   },
-  "description": "",
+  "description": "Transforms a JavaScript class declared using Google closure's goog.defineClass into an ES6 class",
   "main": "index.js",
   "bin": {
     "goog-class-to-es6": "run.js"
