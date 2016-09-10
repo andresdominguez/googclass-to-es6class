@@ -5,7 +5,7 @@ const pluginRunner = require('../lib/plugin_runner');
 describe('goog.defineClass to ES6 class', () => {
 
   it('should convert file to es6', function() {
-    const testFilePath = path.join(__dirname, 'goog_define_class.js');
+    const testFilePath = path.join(__dirname, 'simple_example.js');
     console.log('testFilePath', testFilePath);
     const out = pluginRunner.run(testFilePath);
 
