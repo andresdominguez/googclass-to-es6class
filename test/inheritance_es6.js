@@ -14,6 +14,7 @@ class FooBar extends Parent {
     /** @export {string} */
     this.somethingElse = '';
   }
+
 }
 
 exports = FooBar;

@@ -1,4 +1,5 @@
 const expect = require('chai').expect;
+const fs = require('fs');
 const path = require('path');
 const pluginRunner = require('../lib/plugin_runner');
 
@@ -6,52 +7,21 @@ describe('goog.defineClass to ES6 class', () => {
 
   const convert = function(fileName) {
     const testFilePath = path.join(__dirname, fileName);
-    return pluginRunner.run(testFilePath);
+    // Add new line at the end to match the expected file.
+    return pluginRunner.run(testFilePath) + '\n';
   };
 
-  it('converts file to es6', function() {
-    const converted = convert('simple_example.js');
+  const readFile = function(fileName) {
+    return fs.readFileSync(path.join(__dirname, fileName), 'utf8');
+  };
 
-    expect(converted).to.equal(`/**
- * Andres, this is foo bar
- */
-class FooBar {
-  /**
-   *
-   * @param name
-   */
-  constructor(name) {
-    this.name = name;
+  it('converts file to es6', () => {
+    expect(convert('with_statics_es5.js')).to.equal(
+        readFile('with_statics_es6.js'));
+  });
 
-    /** @export {string} */
-    this.somethingElse = '';
-  }
-
-  hello() {}
-
-  /**
-   * Test for yo yo.
-   * @param foo
-   * @param bar
-   * @return {string}
-   */
-  yoyoyo(foo, bar) {
-    return '';
-  }
-
-}
-
-/**
- * @typedef {{one: string, two: string}}
- */
-FooBar.Foo = {
-  one: 'on'
-};
-FooBar.Chooo = {
-  two: 'tttwwwoo'
-};
-
-
-exports = FooBar;`);
+  it('converts file with parent', () => {
+    expect(convert('inheritance_es5.js')).to.equal(
+        readFile('inheritance_es6.js'));
   });
 });
