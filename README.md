@@ -55,3 +55,13 @@ Provide the name of the file. The transformed class will be written to stdout:
 ```shell
 goog-class-to-es6 some_goog_define_class.js
 ```
+
+## Testing
+
+```shell
+# 1. Clone this repo
+# 2. Install
+npm i
+# 3. Test
+npm test
+```
