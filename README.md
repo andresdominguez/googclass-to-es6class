@@ -56,6 +56,18 @@ Provide the name of the file. The transformed class will be written to stdout:
 goog-class-to-es6 some_goog_define_class.js
 ```
 
+Do inline replacement. The file will be overwritten.
+
+```shell
+goog-class-to-es6 -i some_goog_define_class.js
+```
+
+Write to another file
+
+```shell
+goog-class-to-es6 -i some_goog_define_class.js output_file_es6.js
+```
+
 ## Testing
 
 ```shell
