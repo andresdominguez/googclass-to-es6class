@@ -1,5 +1,5 @@
 const One = goog.defineClass(null, {
-  constructor() {
+  constructor: function() {
   },
 
   statics: {

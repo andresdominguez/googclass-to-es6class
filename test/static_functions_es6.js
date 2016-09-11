@@ -1,7 +1,5 @@
 class One {
-  constructor() {
-
-  }
+  constructor() {}
 
   /**
    * Description one.
@@ -12,9 +10,8 @@ class One {
     return foo + '-' + bar;
   }
 
-  static three() {
+  static three() {}
 
-  }
 }
 
 /**
