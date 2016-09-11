@@ -65,7 +65,7 @@ goog-class-to-es6 -i some_goog_define_class.js
 Write to another file
 
 ```shell
-goog-class-to-es6 -i some_goog_define_class.js output_file_es6.js
+goog-class-to-es6 some_goog_define_class.js output_file_es6.js
 ```
 
 ## Testing
