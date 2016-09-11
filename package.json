@@ -14,7 +14,7 @@
     "test": "./node_modules/.bin/mocha test/*spec.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Andres Dominguez",
   "license": "MIT",
   "dependencies": {
     "babel-core": "^6.14.0"
