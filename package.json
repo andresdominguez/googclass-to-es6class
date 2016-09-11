@@ -8,7 +8,7 @@
   "description": "Transforms a JavaScript class declared using Google closure's goog.defineClass into an ES6 class",
   "main": "index.js",
   "bin": {
-    "goog-class-to-es6": "run.js"
+    "goog-class-to-es6": "lib/cli.js"
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha test/*spec.js"
@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "commander": "^2.9.0",
     "mocha": "^3.0.2"
   }
 }
