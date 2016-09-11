@@ -24,4 +24,9 @@ describe('goog.defineClass to ES6 class', () => {
     expect(convert('inheritance_es5.js')).to.equal(
         readFile('inheritance_es6.js'));
   });
+
+  it('converts statics', function() {
+    expect(convert('static_functions_es5.js')).to.equal(
+        readFile('static_functions_es6.js'));
+  });
 });
