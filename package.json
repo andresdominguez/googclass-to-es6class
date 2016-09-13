@@ -1,6 +1,6 @@
 {
   "name": "goog-class-to-es6",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/andresdominguez/googclass-to-es6class.git"
@@ -17,11 +17,11 @@
   "author": "Andres Dominguez",
   "license": "MIT",
   "dependencies": {
-    "babel-core": "^6.14.0"
+    "babel-core": "^6.14.0",
+    "commander": "^2.9.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "commander": "^2.9.0",
     "mocha": "^3.0.2"
   }
 }
