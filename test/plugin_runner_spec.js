@@ -8,7 +8,7 @@ describe('goog.defineClass to ES6 class', () => {
   const convert = function(fileName) {
     const testFilePath = path.join(__dirname, fileName);
     // Add new line at the end to match the expected file.
-    return pluginRunner.run(testFilePath) + '\n';
+    return pluginRunner.run(testFilePath);
   };
 
   const readFile = function(fileName) {

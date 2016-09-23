@@ -77,3 +77,7 @@ npm i
 # 3. Test
 npm test
 ```
+
+## Changelog
+
+* 1.3.3 Add empty line at the end of file if original file has it.
