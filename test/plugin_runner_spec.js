@@ -29,4 +29,10 @@ describe('goog.defineClass to ES6 class', () => {
     expect(convert('static_functions_es5.js')).to.equal(
         readFile('static_functions_es6.js'));
   });
+
+  it('skips file without goog.defineClass', function() {
+    // A file without goog.defineClass will be skipped.
+    expect(convert('without_goog_define_class.js')).to.equal(
+        readFile('without_goog_define_class.js'));
+  });
 });
