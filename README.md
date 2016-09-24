@@ -81,3 +81,4 @@ npm test
 ## Changelog
 
 * 1.4.0 Add empty line at the end of file if original file has it.
+* 1.5.0 Skip files without goog.defineClass.
