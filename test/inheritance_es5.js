@@ -7,13 +7,20 @@ const FooBar = goog.defineClass(Parent, {
   /**
    * Creates a new instance of...
    * @param {Object} name
+   * @constructor
    */
   constructor: function(name) {
     this.name = name;
 
     /** @export {string} */
     this.somethingElse = '';
+  },
+
+  /* A comment */
+  newStyle(paramOne, paramTwo) {
+    console.log('foo');
   }
+
 });
 
 exports = FooBar;

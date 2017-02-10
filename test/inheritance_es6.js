@@ -18,6 +18,11 @@ class FooBar extends Parent {
     this.somethingElse = '';
   }
 
+  /* A comment */
+  newStyle(paramOne, paramTwo) {
+    console.log('foo');
+  }
+
 }
 
 exports = FooBar;
