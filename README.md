@@ -83,4 +83,4 @@ npm test
 * 1.4.0 Add empty line at the end of file if original file has it.
 * 1.5.0 Skip files without goog.defineClass.
 * 1.6.0 Add support for functions declared like: foo() {
-
+* 1.7.0 Escape closure type casts because Babel strips them.
