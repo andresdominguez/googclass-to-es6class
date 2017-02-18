@@ -19,6 +19,7 @@ const FooBar = goog.defineClass(Parent, {
   /* A comment */
   newStyle(paramOne, paramTwo) {
     console.log('foo');
+    const severityName = /** @type {string} */ (fn(scope));
   }
 
 });
